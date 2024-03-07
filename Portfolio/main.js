@@ -28,4 +28,12 @@ ScorllReveal().reveal('.icon, .services-container, .portfolio-box, .contant form
 ScorllReveal().reveal('.home-content h1, .about-img', { origin:'left'});
 ScorllReveal().reveal('.home-content p, .about-content', { origin:'right'});
 
+const typed = new Typed('.multiple-text',{
+    strings: ['Frontend Developer', 'Web Designer','Blogger'],
+    typedSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
 
