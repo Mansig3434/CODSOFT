@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Charm&family=Dancing+Script:wght@500&family=Eczar&family=Kanit:wght@200&family=Lobster&family=Marck+Script&family=Oxanium:wght@300&display=swap");
+:root {
+  --bgclr: #333;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+.container {
+  padding: 0px 8%;
+}
+.title {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  /* background: #333; */
+}
+
+nav {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4%;
+  height: 80px;
+  width: 100%;
+  color: #fff;
+  background-color: var(--bgclr);
+  box-shadow: 0 0 10px #454545;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 6px;
+  overflow: hidden;
+  background: transparent;
+}
+nav ul li {
+  margin: 0px 20px;
+  background: transparent;
+}
+nav ul li a {
+  background: transparent;
+  position: relative;
+  text-transform: uppercase;
+  padding: 4px 3px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+  border-bottom: 2px solid #eeeeee;
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -106%;
+  border-top: 2px solid #eee;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(92, 92, 105);
+  z-index: -1;
+  visibility: hidden;
+  transition: 0.4s;
+}
+nav ul li:hover a::before {
+  bottom: 0%;
+  visibility: visible;
+}
+.nav-login-block {
+  width: 150px;
+}
+.login {
+  padding: 3px 10px;
+  color: #fff;
+  color: #17252a;
+  background-color: #fff;
+  border: 2px solid #ebebeb;
+  transition: 0.4s;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  left: 50%;
+  transition: 0.4s;
+}
+.login:hover {
+  background: transparent;
+  box-shadow: 0 0 5px #ebebeb;
+  border: 2px solid #ebebeb;
+  color: #fff;
+  padding: 5px 10px;
+}
+.login::before {
+  content: "";
+  transition: 0.4s;
+  transform: translate(-50%, -50%);
+  height: 5px;
+  width: 45px;
+  background-color: transparent;
+  opacity: 0;
+}
+.login:hover::before {
+  height: 50px;
+  opacity: 1;
+  background-color: var(--bgclr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+.login::after {
+  content: "";
+  transition: 0.4s;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  width: 7px;
+  background-color: transparent;
+  opacity: 0;
+}
+.login:hover::after {
+  opacity: 1;
+  background-color: var(--bgclr);
+  position: absolute;
+  width: 90px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+.login span {
+  background: transparent;
+  position: relative;
+}
+.login:hover span {
+  color: #fff;
+  z-index: 2;
+  text-shadow: 0 0 2px #fff;
+}
