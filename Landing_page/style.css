@@ -610,4 +610,104 @@ nav ul li:hover a::before {
       opacity:1;
     }
   }
+  .section_test {
+    height: 98%;
+    background: #3d3c3c;
+    position: relative;
+    padding: 80px 100px;
+  }
+  .section_test::before {
+    content: "";
+    position: absolute;
+    background: url('images/back3.svg');
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+  .section_test .test_container {
+    position: relative;
+    z-index: 1;
+    /* border: 2px solid red; */
+    height: 100%;
+    padding: 20px;
+  }
+  .section_test .test_container .heading{
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(42, 173, 255);
+    font-weight: 800;
+    /* margin-bottom: 20px; */
+  }
+  .section_test h2{
+      font-size: 2em;
+      color: #fffefeda;
+      text-align: center;
+      opacity: .9;
   
+  }
+  .section_test .test_container p{
+      padding:  7px 30px;  
+      color: #ffffffc8;
+      text-align: center;
+      opacity: .9;
+  }
+  
+  .section_test .test_container .test_info{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 10px 0;
+      background-color:#3334;
+      position: relative;
+  }
+  .section_test .test_container .test_info .left_part,
+  .section_test .test_container .test_info .mid_part,
+  .section_test .test_container .test_info .right_part{
+      /* border: 2px solid red; */
+      padding: 20px;
+      font-family: "Roboto", sans-serif;
+  }
+  .section_test .test_container .test_info .left_part h4,
+  .section_test .test_container .test_info .mid_part h4,
+  .section_test .test_container .test_info .right_part h4{
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
+  .section_test .test_container .test_info .left_part ul li,
+  .section_test .test_container .test_info .mid_part ul li,
+  .section_test .test_container .test_info .right_part ul li{
+      font-size: 1em;
+      padding: 5px 0;
+  }
+  .section_test .test_container a{
+      height: 36px;
+      width: 100px;
+      background: #343434;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      text-decoration: none;
+      color: White;
+      transition: .5s;
+      outline: none;
+      margin: 10px 0;
+  }
+  .section_test .test_container a:hover{
+      background: #777;
+      border: 2px solid #343434;
+      color: #222;
+  }
+  
+    
