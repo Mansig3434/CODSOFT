@@ -902,6 +902,143 @@ nav ul li:hover a::before {
   ion-icon {
     color: #eee;
   }
+  footer {
+    position: absolute;
+    background: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    gap: 80px;
+    padding: 50px 100px 30px 100px;
+  }
+  footer .footer-top {
+    display: grid;
+    grid-template-columns: 350px 230px 200px 300px;
+  }
+  footer .footer-top .brand .brand-name {
+    color: aquamarine;
+    font-size: 2.5em;
+  }
+  footer .footer-top .brand .brand-description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    margin-left: 5px;
+    width: 80%;
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
+  }
+  footer .footer-top .brand .wrap .wrap-item {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #777;
+    padding: 3px 0px;
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-top .brand .wrap .wrap-item ion-icon {
+    color: #777;
+  }
+  footer .footer-top .brand .wrap .wrap-item span {
+    padding-left: 10px;
+  }
+  footer .footer-top .web-links {
+    padding: 10px 0px;
+  }
+  footer .footer-top .web-links ul {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 5px;
+    list-style: none;
+  }
+  footer .footer-top .web-links ul li {
+    margin: 13px 0px;
+  }
+  footer .footer-top .web-links ul li a {
+    text-decoration: none;
+    font-style: none;
+    color: #777;
+  }
+  footer .footer-top .web-links ul li a:hover {
+    color: #eee;
+  }
+  footer .footer-top .otherlinks {
+    padding: 10px 0px;
+  }
+  footer .footer-top .otherlinks ul {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 5px;
+    list-style: none;
+  }
+  footer .footer-top .otherlinks ul li {
+    margin: 13px 0px;
+  }
+  footer .footer-top .otherlinks ul li a {
+    text-decoration: none;
+    font-style: none;
+    color: #777;
+  }
+  footer .footer-top .otherlinks ul li a:hover {
+    color: #eee;
+  }
+  footer .footer-top .social-links {
+    padding: 10px 0px;
+  }
+  footer .footer-top .social-links p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    font-size: 15px;
+  }
+  footer .footer-top .footer-title{
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;  
+  }
+  .wrapper {
+    margin-top: 10px;
+    display: flex;
+  }
+  .wrapper .socialbx {
+    position: relative;
+    border-radius: 50%;
+    margin: 0px 7px;
+    height: 30px;
+    width: 30px;
+  }
+  .wrapper .socialbx ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 26px;
+    width: 26px;
+    color: #666;
+    transition: 0.4s ease;
+  }
+  .wrapper .socialbx:hover ion-icon {
+    top: 35%;
+  }
+  .wrapper .socialbx:hover:nth-child(1) ion-icon {
+    color: #4267b2;
+  }
+  .wrapper .socialbx:hover:nth-child(2) ion-icon {
+    color: #c13584;
+  }
+  .wrapper .socialbx:hover:nth-child(3) ion-icon {
+    color: #1da1f2;
+  }
+  .wrapper .socialbx:hover:nth-child(4) ion-icon {
+    color: #2867b2;
+  }
+  .wrapper .socialbx:hover:nth-child(5) ion-icon {
+    color: #ff0000;
+  }
   
+  footer .copyright {
+    font-family: "League Spartan", sans-serif;
+  }    
   
     
