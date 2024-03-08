@@ -709,5 +709,199 @@ nav ul li:hover a::before {
       border: 2px solid #343434;
       color: #222;
   }
+  .section_contact {
+    height: 99vh;
+    position: relative;
+    background: #343434;
+    padding: 80px 100px;
+    color: #000;
+  }
+  .section_contact::before {
+    content: "";
+    position: absolute;
+    background: url('images/back4.svg');
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    filter: drop-shadow(0 2px 0.8px #777);
+  }
+  .section_contact .contact_container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 97%;
+    /* width: 88%; */
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .section_contact .contact_container .contact_info {
+    width: 40%;
+    border: 2px solid #777;
+    padding: 10px;
+    border-radius: 0 30px 0 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    /* filter: drop-shadow( 0 2px 8px #777);  */
+  }
+  .section_contact .contact_container .contact_info:hover{
+    box-shadow: 0 0 5px #eeeeee9b;
+  }
+  .section_contact .contact_container .contact_info .heading {
+    font-size: 2em;
+    color: #eee;
+    letter-spacing: 1px;
+    font-family: "League Spartan", sans-serif;
+    padding: 16px 0;
+  }
+  .section_contact .contact_container .contact_info p {
+    color: #eee;
+    opacity: 0.8;
+    font-size: 1.2em;
+  }
+  .section_contact .contact_container .contact_info .wrap {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #eee;
+    opacity: 0.8;
+    padding: 20px 0px;
+  }
+  .section_contact .contact_container .contact_info .wrap .wrap-item {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    color: #ddd;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .section_contact .contact_container .contact_info .wrap .wrap-item:hover {
+    color: white;
+    opacity: 1;
+  }
+  .section_contact .contact_container .contact_info .wrap .wrap-item ion-icon {
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .section_contact
+    .contact_container
+    .contact_info
+    .wrap
+    .wrap-item:hover
+    ion-icon {
+    background-color: #17cd17;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #eee;
+  }
+  .section_contact .contact_container .contact_info .wrap span {
+    padding-left: 10px;
+  }
+  .section_contact .contact_container .contact_info .wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+  }
+  .section_contact .contact_container .contact_info .wrapper .socialbx ion-icon {
+    top: 0;
+  }
+  .section_contact
+    .contact_container
+    .contact_info
+    .wrapper
+    .socialbx:hover
+    ion-icon {
+    color: #eee;
+  }
+  .section_contact .contact_container .contact_form {
+    width: 60%;
+    border: 2px solid #777;
+    border-radius: 30px 0 30px 0;
+    /* padding: 20px; */
+    position: relative;
+    transition: .3s;
+  }
+  .section_contact .contact_container .contact_form:hover{
+    box-shadow: 0 0 5px #eeeeee9b;
+  }
+  .section_contact .contact_container .contact_form form {
+    height: 100%;
+    padding: 20px 20px;
+  }
+  .section_contact .contact_container .contact_form form div {
+    margin-bottom: 15px;
+  }
+  .section_contact .contact_container .contact_form form div label {
+    color: white;
+    padding: 5px 0;
+  }
+  .dimaag_kharb {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section_contact .contact_container .contact_form form div input {
+    height: 40px;
+    width: 295px;
+    font-size: 1.2em;
+    color: #777;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 4px;
+  }
+  .section_contact .contact_container .contact_form form div textarea {
+    height: 120px;
+    width: 100%;
+    font-size: 1.2em;
+    color: #777;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    border-radius: 4px;
+    background-color: rgba(30, 30, 30, 0.5);
+  }
+  .section_contact .contact_container .contact_form form div input:focus,
+  .section_contact .contact_container .contact_form form div textarea:focus {
+    color: aliceblue;
+  }
+  .section_contact .contact_container .contact_form form div span {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .section_contact .contact_container .contact_form form div .submit-btn {
+    height: 30px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: none;
+    transition: 0.3s;
+    position: relative;
+  }
+  .section_contact .contact_container .contact_form form div .submit-btn:hover {
+    background: #666;
+    color: rgba(255, 255, 255, 0.756);
+  }
+  ion-icon {
+    color: #eee;
+  }
+  
   
     
